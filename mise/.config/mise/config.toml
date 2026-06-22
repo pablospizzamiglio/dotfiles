@@ -14,7 +14,7 @@ sops = "latest"
 stern = "latest"
 
 [settings]
-python_compile = true
-python_venv_auto_create = true
+python.compile = false
+python.uv_venv_auto = "create|source"
 trusted_config_paths = ["~/dotfiles/mise/"]
 idiomatic_version_file_enable_tools = ["node", "python", "ruby"]
